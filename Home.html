@@ -6,20 +6,140 @@
     <title>Home Page</title>
 </head>
 <style>
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    color: #ffd700; /* Change color on hover */
+  }
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #928888;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container1{
+            background-color: rgba(41, 108, 109, 0.8);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .qualification {
+            margin-top: 20px;
+        }
+
+        .qualification h2 {
+            color: #333;
+        }
+
+        .qualification ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .qualification li {
+            margin-bottom: 10px;
+        }
+
+        .qualification li strong {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+        .qualification1{
+            background-color: rgba(18, 221, 48, 0.41);
+            width: 170px;
+            border-radius: 10px;
+        }
+   
+
+
+
     table, th, td {
       border:1px solid black;
+      align-items: center;
     }
     thead{
        background-color: antiquewhite ;
     }
+    .img {
+            text-align: center;
+        }
+
+        .img img {
+            width: 300px;
+            height: 400px;
+            border-radius: 43px;
+        }
     </style>
 <body>
-    <h1>Hi Its Me  Mubashir</h1>
-    <h2>From Kohat</h2>
-    <h2>Bs Software Engineering </h2>
-    <img src="Mobii.jpg" width="300px" height="400px">
 
-    <table style="width: 50%;">
+    <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="skill.html">Skill</a></li>
+          <li><a href="Project.html">Project</a></li>
+          <li><a href="Contact Us.html">Contact</a></li>
+        </ul>
+      </nav>
+   
+<div class="img">    <img src="Mobii.jpg" width="300px" height="400px" >
+</div>
+
+    <div class="container">
+        <h1 class="container1">Student Introduction</h1>
+        <p>Hello, my name is Mubashir. I am a passionate learner and aspiring professional in the field of computer science.</p>
+        <div class="qualification">
+            <h2 class="qualification1">Qualifications</h2>
+            <ul>
+                <li><strong>Name:</strong> Mubashir Rehman</li>
+                <li><strong>Age:</strong> 20</li>
+                <li><strong>Education:</strong> Bachelor's Degree in Computer Science</li>
+                <li><strong>Skills:</strong> HTML, CSS, JavaScript, Python, Java</li>
+                <li><strong>Experience:</strong> 1 year internship at Tech Company X</li>
+            </ul>
+        </div>
+    </div>
+
+
+    
+
+    <table style="width: 50%;" align="center">
         <thead>
             <tr>
                 <th>Education</th>

@@ -10,43 +10,100 @@
 </head>
 
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-    }
+   .{
+	margin: 0%;
+	padding: 0%;
+	font-family: 'Roboto', sans-serif;
 
-    .nav {
-        background-color: #333;
-        padding: 10px 0;
-    }
+}
+body{
+	background-color: #f7f4f4ee;
+}
 
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
+nav{
+	display: flex;
+	justify-content: space-between;
+	background-color: #eeee;
+	padding: 22px;
+	box-shadow: 0px 2px 2px 2px rgb(181, 179, 179);
+}
+nav .logo{
+	margin-left: 22px;
+	font-size: 24px;
+}
+ul{
+	margin-right: 45px;
+	margin-top: 7px;
+}
+nav ul li{
+	list-style: none;
 
-    nav ul li {
-        display: inline;
-        margin-right: 20px;
-    }
+}
+ul li a{
+	margin-inline: 22px;
+	font-size: 20px;
+}
 
-    nav ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 16px;
-    }
+ul li i{
+	font-size: 22px;
+}
+ul li #Home{
+	color: rgb(5, 167, 167);
+}
 
-    nav ul li a:hover {
-        color: #ffd700;
-        /* Change the color on hover */
-    }
+ul li a:hover{
+	border-bottom: 2px solid black;
+	cursor: pointer;
+}
+ul li i:hover{
+	color: gray;
+	cursor: pointer;
+}
+
+
+
+.main{
+	display: flex;
+	justify-content: space-around;
+}
+.main .mainText{
+	margin-top: 144px;
+/*	display: flex;*/
+flex-direction: 1;
+}
+.mainText h1{
+font-size: 64px;
+}
+.mainText .top{
+	color: rgb(4, 138, 138);
+}
+.main .mainText img{
+	width: 94%;
+	align-items: left;
+}
+
+.mainText button{
+	width: 145px;
+	height: 40px;
+	background-color: rgb(4, 140, 140);
+	border: none;
+	font-size: 22px;
+	color: white;
+	margin-top: 24px;
+}
+
+.mainText button:hover{
+	border: 3px solid rgb(3, 128, 128);
+	background-color: transparent;
+	color: rgb(2, 121, 121);
+}
+.mainText p{
+	margin-top: 12px;
+}
 </style>
 
 <body>
-    <div class="nav">
+    <!-- <div class="nav">
         <nav>
             <ul>
                 <li><a href="Home.html">Home</a></li>
@@ -55,7 +112,38 @@
                 <li><a href="Contact Us.html">Contact us</a></li>
             </ul>
         </nav>
-    </div>
+    </div> -->
+
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">
+                <h1>My-Portfolio</h1>
+            </div>
+            <ul>
+                <li>
+                    <a id="Home" href="Home.html">Home</a>
+                    <a href="skill.html">skill</a>
+                    <a href="Project.html">Project</a>
+                    <a href="Contact Us.html">Contact us</a>
+                    
+                    <i class="fas fa-shopping-cart"></i> <!-- Corrected FontAwesome icon class -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Page -->
+        <div class="main" style="border: 5px ,">
+            <div class="mainText">
+                <h2>My-Portfolio</h2>
+                <h1 class="top">Welcome to My Portfolio</h1>
+                <h1>I'M Mubashir Rehman</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi</p>
+                <button>Explore</button>
+            </div>
+            <div style="flex-direction: 2;"><img src="" width="10px" height="10px"></div>
+        </div>
+
     <br><br>
     <div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ccOb8gL0suE?si=FJiPB4xXp84wxla4"
